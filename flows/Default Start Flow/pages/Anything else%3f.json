@@ -1,0 +1,69 @@
+{
+  "name": "37544f45-8aa3-4345-bb30-052031225158",
+  "displayName": "Anything else?",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Have you any further queries for me?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "pnr_num",
+      "value": null
+    }, {
+      "parameter": "departure_city",
+      "value": null
+    }, {
+      "parameter": "destination_city",
+      "value": null
+    }, {
+      "parameter": "departure_date",
+      "value": null
+    }, {
+      "parameter": "return_date",
+      "value": null
+    }, {
+      "parameter": "passenger_name",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Por favor, hágame saber cómo puedo ser de servicio." ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Please let me know how I can be of service." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Start Page",
+    "name": "debd3241-46ab-4864-88c2-7f6bee4535a7"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No te preocupes, me alegra ser de ayuda hoy. Adiós." ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "No worries, I'm glad to be of assistance today. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "6115a201-8d12-4794-97d3-c2af22351d55"
+  } ]
+}

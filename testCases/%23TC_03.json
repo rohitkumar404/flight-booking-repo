@@ -1,0 +1,279 @@
+{
+  "name": "59edf9bd-32ab-4cab-86ee-676ae65ff2bd",
+  "tags": [ "#dep#chennaitomumbai" ],
+  "displayName": "#TC_03",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i want check flight status "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.flight_status"
+      },
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Mumbai "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm fight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Looking up your flight reference Mumbai, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\n\nWould you like to make any changes to your flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, we look forward to having you fly with us soon." ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Please let me know how I can be of service." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what is cost of mumbai flight ticket "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.book_a_flight"
+      },
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What city would you like the flight to depart from?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Chennai "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day of the departure?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "june 30th"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day for the returning flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "july 10th "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the passenger's name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "rajesh"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm trip",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for that information. Let me check on the availability of your ticket." ]
+      }, {
+        "text": [ "This is to confirm that rajesh will fly \nFrom: Chennai\nTo: Mumbai\nLeaving on: 2023-06-30\nReturning on: 2023-07-10\nIs this correct?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yeah its correct "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, your flight is booked!" ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "End Session",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "No worries, I'm glad to be of assistance today. Goodbye." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1688029601,
+    "nanos": 520609000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  }
+}

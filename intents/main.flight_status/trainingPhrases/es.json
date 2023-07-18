@@ -1,0 +1,44 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "estado del vuelo",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Mi PNR ",
+      "auto": true
+    }, {
+      "text": "es",
+      "parameterId": "language",
+      "auto": true
+    }, {
+      "text": " Z453K9, ¿todavía está a tiempo?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "¿Cuál es el estado de mi vuelo?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Quisiera saber si mi vuelo sigue a tiempo",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Consultar estado de vuelo"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  } ]
+}

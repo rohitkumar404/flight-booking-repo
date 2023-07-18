@@ -1,0 +1,37 @@
+{
+  "name": "a486581e-c121-45ef-b8e9-2cea26f94358",
+  "displayName": "main.book_a_flight",
+  "parameters": [ {
+    "id": "destination_city",
+    "entityType": "@sys.geo-city"
+  }, {
+    "id": "departure_date",
+    "entityType": "@sys.date"
+  }, {
+    "id": "departure_city",
+    "entityType": "@sys.geo-city"
+  }, {
+    "id": "return_date",
+    "entityType": "@sys.date"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "location1",
+    "entityType": "@sys.location"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  }, {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  }, {
+    "id": "date",
+    "entityType": "@sys.date"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 22
+}

@@ -1,0 +1,112 @@
+{
+  "name": "33c1653b-6c3a-43de-bf67-2c18729fbf34",
+  "tags": [ "#upgrade#economy" ],
+  "displayName": "TC_04",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "flight checking"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.flight_status"
+      },
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "22222"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm fight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Looking up your flight reference 22222, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\n\nWould you like to make any changes to your flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, we look forward to having you fly with us soon." ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "how to upgrade meals in flight"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.miles.upgrade"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes, depending on the flight and availability, we can put in a request for an upgrade from Economy." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1688030023,
+    "nanos": 946106000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "5eece6c9-7d12-4f62-b344-886ad50e5453",
+  "displayName": "main.flight_status",
+  "parameters": [ {
+    "id": "PNR_Number",
+    "entityType": "@PNR_Number"
+  }, {
+    "id": "language",
+    "entityType": "@sys.language"
+  }, {
+    "id": "number",
+    "entityType": "@sys.number"
+  }, {
+    "id": "geo-city",
+    "entityType": "@sys.geo-city"
+  }, {
+    "id": "location",
+    "entityType": "@sys.location"
+  }, {
+    "id": "date-time",
+    "entityType": "@sys.date-time"
+  } ],
+  "priority": 500000,
+  "numTrainingPhrases": 12
+}

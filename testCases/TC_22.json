@@ -1,0 +1,37 @@
+{
+  "name": "ade4e07e-67d7-4f5f-9f3c-bcefdb954bc9",
+  "displayName": "TC_22",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "I want to upgrade ticket "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.miles.upgrade"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes, depending on the flight and availability, we can put in a request for an upgrade from Economy." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1688384472,
+    "nanos": 613323000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "name": "99e71cdc-fff6-40cc-9d64-acef43e72f32",
+  "tags": [ "#ticketto#status" ],
+  "displayName": "TC_07Tickettostatus",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Hi! How are you doing?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Ticket information"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.book_a_flight"
+      },
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What city would you like the flight to depart from?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "delhi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day of the departure?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "today"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your destination city?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "pune"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the month and day for the returning flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "day after tomorrow "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Ticket information",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is the passenger's name?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "janu"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm trip",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you for that information. Let me check on the availability of your ticket." ]
+      }, {
+        "text": [ "This is to confirm that janu will fly \nFrom: Delhi\nTo: Pune\nLeaving on: 2023-06-29\nReturning on: 2023-07-01\nIs this correct?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.yes"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, your flight is booked!" ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "what is cabin limit "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.cabin.limits"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "It depends on the destination airport. Generally, you are allowed a maximum of 1 cabin bag, not exceeding 7kg and with the Sum of L + W + H (including the wheels) must be no more than 115cm (45 inches)." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "any powerbanks allows?"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.cabin.batteries"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "For Lithium batteries (includes Power Banks), no more than two spare batteries exceeding 100Wh and up to 160Wh, are permitted." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "meals upgrading "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.miles.upgrade"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes, depending on the flight and availability, we can put in a request for an upgrade from Economy." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "check flight status"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "main.flight_status"
+      },
+      "currentPage": {
+        "name": "Check flight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "What is your flight booking reference please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "55555"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Confirm fight status",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Looking up your flight reference 55555, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\n\nWould you like to make any changes to your flight?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "no"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "confirmation.no"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Great, we look forward to having you fly with us soon." ]
+      }, {
+        "text": [ "Have you any further queries for me?" ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "power bank limit"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.cabin.batteries"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "For Lithium batteries (includes Power Banks), no more than two spare batteries exceeding 100Wh and up to 160Wh, are permitted." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "meals upgrading"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.miles.upgrade"
+      },
+      "currentPage": {
+        "name": "Anything else?",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Yes, depending on the flight and availability, we can put in a request for an upgrade from Economy." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1688032750,
+    "nanos": 247898000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  }
+}

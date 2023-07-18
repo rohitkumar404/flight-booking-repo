@@ -1,0 +1,217 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "¿Tienes vuelos baratos a ",
+      "auto": true
+    }, {
+      "text": "Nueva York",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": " para este fin de ",
+      "auto": true
+    }, {
+      "text": "semana",
+      "parameterId": "date",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Reserve ",
+      "auto": true
+    }, {
+      "text": "SFO a MIA",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": " el ",
+      "auto": true
+    }, {
+      "text": "10 de agosto",
+      "parameterId": "date",
+      "auto": true
+    }, {
+      "text": " de ida",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Estoy reservando ",
+      "auto": true
+    }, {
+      "text": "un",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " viaje sorpresa ",
+      "auto": true
+    }, {
+      "text": "para",
+      "parameterId": "geo-city",
+      "auto": true
+    }, {
+      "text": " mi mamá, ¿pueden ayudarme a organizarlo del ",
+      "auto": true
+    }, {
+      "text": "10",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " al ",
+      "auto": true
+    }, {
+      "text": "25 de mayo",
+      "parameterId": "date",
+      "auto": true
+    }, {
+      "text": " a ",
+      "auto": true
+    }, {
+      "text": "Costa Rica",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": "?",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "reservar "
+    }, {
+      "text": "un",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " vuelo"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Mi familia está de visita la "
+    }, {
+      "text": "próxima semana",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " y necesitamos reservar "
+    }, {
+      "text": "6",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " boletos de "
+    }, {
+      "text": "ida",
+      "parameterId": "geo-city",
+      "auto": true
+    }, {
+      "text": " y vuelta."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Necesito "
+    }, {
+      "text": "un",
+      "parameterId": "number",
+      "auto": true
+    }, {
+      "text": " vuelo el "
+    }, {
+      "text": "sábado",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " de "
+    }, {
+      "text": "LAX a San José",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Quiero volar en mi prima desde "
+    }, {
+      "text": "Montreal",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": " el 8 de "
+    }, {
+      "text": "agosto",
+      "parameterId": "date-time",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Quiero buscar "
+    }, {
+      "text": "dos",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": " "
+    }, {
+      "text": "asientos",
+      "parameterId": "geo-city",
+      "auto": true
+    }, {
+      "text": " para "
+    }, {
+      "text": "la ciudad de Panamá",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": " el "
+    }, {
+      "text": "4 de julio",
+      "parameterId": "date",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  }, {
+    "parts": [ {
+      "text": "Para mi aniversario de "
+    }, {
+      "text": "bodas",
+      "parameterId": "location",
+      "auto": true
+    }, {
+      "text": " queremos ir a "
+    }, {
+      "text": "Seattle",
+      "parameterId": "location1",
+      "auto": true
+    }, {
+      "text": " por "
+    }, {
+      "text": "Navidad",
+      "parameterId": "date-time",
+      "auto": true
+    }, {
+      "text": "."
+    } ],
+    "repeatCount": 1,
+    "languageCode": "es"
+  } ]
+}

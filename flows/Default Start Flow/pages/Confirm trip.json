@@ -1,0 +1,77 @@
+{
+  "name": "3fd57da0-a9b7-4e08-a830-ae18d9fe7b2f",
+  "displayName": "Confirm trip",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Esto es para confirmar que $session.params.passenger_name volará\r\nDe: $session.params.departure_city\r\nPara: $sesión.params.destination_city\r\nFecha de salida: $session.params.departure_date\r\nVolviendo el: $session.params.return_date\r\n¿Es esto correcto?" ]
+      },
+      "languageCode": "es"
+    }, {
+      "text": {
+        "text": [ "This is to confirm that $session.params.passenger_name will fly \nFrom: $session.params.departure_city\nTo: $session.params.destination_city\nLeaving on: $session.params.departure_date\nReturning on: $session.params.return_date\nIs this correct?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "¡Genial, tu vuelo está reservado!\r\n¿Tienes más consultas para mí?" ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Great, your flight is booked!" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything else?",
+    "name": "20db0cab-1c03-4cca-9902-5e86ecfd3ac5"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "setParameterActions": [ {
+        "parameter": "departure_city",
+        "value": null
+      }, {
+        "parameter": "destiniation_city",
+        "value": null
+      }, {
+        "parameter": "departure_date",
+        "value": null
+      }, {
+        "parameter": "return_date",
+        "value": null
+      }, {
+        "parameter": "passenger_name",
+        "value": null
+      } ]
+    },
+    "targetPage": "Ticket information",
+    "name": "76e4e3e6-e21a-400b-ba87-1248590d42b5"
+  }, {
+    "intent": "user.request.repeat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Claro, déjame repetir eso:" ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Sure, let me repeat that:" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Ticket information",
+    "name": "d4c6cca3-5d23-4f5b-a087-c34665071c74"
+  } ]
+}

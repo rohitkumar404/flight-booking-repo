@@ -1,0 +1,55 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Consultar estado de vuelo"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Check flight status"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I would like to know if my flight is still on time"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "What is my flight status?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Is my flight on time?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "My PNR is "
+    }, {
+      "text": "Z453K9",
+      "parameterId": "PNR_Number"
+    }, {
+      "text": ", is it still on time?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "PNR "
+    }, {
+      "text": "K4P89E",
+      "parameterId": "PNR_Number"
+    }, {
+      "text": ", what is the flight status?"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}
