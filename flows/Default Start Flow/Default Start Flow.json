@@ -1,0 +1,109 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi! How are you doing?", "Hello! How can I help you?", "Good day! What can I do for you today?", "Greetings! How can I assist?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "¡Buenos días!", "¡Hola! ¿Le puedo ayudar en algo?", "¡Buen día! ¿Qué puedo hacer por ti hoy?", "¡Saludos! ¿Cómo puedo ayudar?", "¡Hola! ¿Cómo estás?" ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "नमस्ते!", "नमस्कार!", "आपका दिन शुभ हो!" ]
+        },
+        "languageCode": "hi"
+      } ]
+    },
+    "name": "640f030a-ad4e-4506-a4c5-2dad0f704a81"
+  }, {
+    "intent": "main.book_a_flight",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Ticket information",
+    "name": "3c7673ed-ec6c-40a4-a3e6-1f1a379ff7ff"
+  }, {
+    "intent": "main.flight_status",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check flight status",
+    "name": "e11635d4-d265-4d9f-b7d8-611601a801ca"
+  }, {
+    "intent": "faq.miles.upgrade",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Upgrade",
+    "name": "e866bf9f-ffad-4fe5-b5f8-85afde49aad6"
+  }, {
+    "intent": "prebuilt_components_telephone_number_collection_country_code_and_telephone_number",
+    "triggerFulfillment": {
+    
+    },
+    "name": "5e3c1c5e-6b0e-4639-abca-09fa2a1b9a86"
+  }, {
+    "condition": "$session.params.last_page = \"Flight Status\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check flight status",
+    "name": "9da900d4-ef07-4b62-8afc-a6e75784b482"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ups, no he entendido a que te refieres.", "¿Podrías repetirlo, por favor?", "¿Disculpa?", "¿Decías?", "¿Cómo?" ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "मुझे समझ नहीं आया. क्या आप अपनी बात दोहरा सकते हैं?", "आपने क्या कहा, मुझे समझ नहीं आया. फिर से कहें?", "माफ़ करें, क्या आप अपनी बात दोहरा सकते हैं?", "माफ़ करें, क्या आप अपनी बात फिर से कह सकते हैं?", "क्या आप अपनी बात दोहरा सकते हैं?", "माफ़ करें, मुझे समझ नहीं आया|", "माफ़ करें, क्या कहा आपने?", "एक बार फिर से कह सकते हैं?", "क्या कहा आपने?", "एक बार फिर से कहिए?", "मुझे समझ नहीं आया|" ]
+        },
+        "languageCode": "hi"
+      } ]
+    },
+    "name": "bb9527cb-6652-4c5f-88d7-6f7e97b24161"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      }, {
+        "text": {
+          "text": [ "Ups, no he entendido a que te refieres.", "¿Podrías repetirlo, por favor?", "¿Disculpa?", "¿Decías?", "¿Cómo?" ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "मुझे समझ नहीं आया. क्या आप अपनी बात दोहरा सकते हैं?", "आपने क्या कहा, मुझे समझ नहीं आया. फिर से कहें?", "माफ़ करें, क्या आप अपनी बात दोहरा सकते हैं?", "माफ़ करें, क्या आप अपनी बात फिर से कह सकते हैं?", "क्या आप अपनी बात दोहरा सकते हैं?", "माफ़ करें, मुझे समझ नहीं आया|", "माफ़ करें, क्या कहा आपने?", "एक बार फिर से कह सकते हैं?", "क्या कहा आपने?", "एक बार फिर से कहिए?", "मुझे समझ नहीं आया|" ]
+        },
+        "languageCode": "hi"
+      } ]
+    },
+    "name": "3f89c740-c8cc-4774-8f0b-5afe274b14d3"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_STANDARD",
+    "classificationThreshold": 0.30000001
+  },
+  "transitionRouteGroups": [ "General FAQs" ]
+}

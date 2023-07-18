@@ -1,0 +1,73 @@
+{
+  "name": "93d19d17-903f-4f87-97fe-ee3c72bd56c4",
+  "displayName": "Confirm fight status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Buscando la referencia de su vuelo $session.params.pnr_num, nos complace confirmar que su vuelo sale a tiempo y saldrá de LAX a las 10 a. m. con destino a NYC. Llegue al menos 1,5 horas antes de la salida.\r\n\r\n¿Te gustaría hacer algún cambio en tu vuelo?" ]
+      },
+      "languageCode": "es"
+    }, {
+      "text": {
+        "text": [ "Looking up your flight reference $session.params.pnr_num, we are pleased to confirm that your flight is on time and will depart LAX at 10am for NYC.  Please arrive at least 1.5 hours before departure.\n\nWould you like to make any changes to your flight?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirmation.yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Nuestros agentes se comunicarán pronto con su solicitud para modificar su vuelo programado." ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Our agents will be in touch soon for your request to amend your scheduled flight." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything else?",
+    "name": "67c2c583-6958-4286-a584-14503f54105e"
+  }, {
+    "intent": "confirmation.no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Genial, esperamos que vuele con nosotros pronto." ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Great, we look forward to having you fly with us soon." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Anything else?",
+    "name": "bb5aa9a5-72f5-4d04-8c4b-d42604d8c818"
+  }, {
+    "intent": "user.request.repeat",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Claro, déjame repetir eso." ]
+        },
+        "languageCode": "es"
+      }, {
+        "text": {
+          "text": [ "Sure, let me repeat that." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "Check flight status",
+    "name": "9eb06ddd-2e26-44d4-a89a-a1148b86f65e"
+  } ],
+  "transitionRouteGroups": [ "FAQs during Flight Status" ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "61e04b7c-cb9d-40e3-a771-436cf1445a4c",
+  "tags": [ "#upgrade#membership" ],
+  "displayName": "Tc_24Upgrade",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "i want to upgrade "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "faq.miles.upgrade"
+      },
+      "currentPage": {
+        "name": "Get Membership Number",
+        "flow": "Upgrade"
+      },
+      "textResponses": [ {
+        "text": [ "What is your Frequent Flyer membership number please?" ]
+      } ],
+      "currentFlow": {
+        "name": "Upgrade"
+      }
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "555555"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you.  Confirming your request for upgrade has been received." ]
+      } ],
+      "currentFlow": {
+        "name": "Default Start Flow"
+      }
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1688385372,
+    "nanos": 593539000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow",
+    "page": "Start Page"
+  }
+}

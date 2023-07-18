@@ -1,0 +1,32 @@
+{
+  "name": "aed50e21-60ac-4801-bc71-5f21bd7c92cc",
+  "displayName": "Get Membership Number",
+  "form": {
+    "parameters": [ {
+      "displayName": "membership_num",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What is your Frequent Flyer membership number please?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+  
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Upgrade request received",
+    "name": "4bd11431-57d2-4923-829f-9db89df603ed"
+  } ]
+}

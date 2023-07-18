@@ -1,0 +1,23 @@
+{
+  "name": "cc57a869-8582-4d28-8bb9-e8bce837d46a",
+  "displayName": "Upgrade request received",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you.  Confirming your request for upgrade has been received." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "e4c41bac-46d7-462d-8105-a0d04096d3da"
+  } ]
+}
